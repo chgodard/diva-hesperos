@@ -38,14 +38,14 @@ This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookie
     * [Export annotations](#export-annotations-panel-4) -->
 
         
-## Installation and Usage
+# Installation and Usage
 
 ---
 
 The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Python 3.8 / 3.9 / 3.10.
      
     
-### Automatic installation  
+## Automatic installation  
 
 1. Install [Anaconda] and unselect *Add to PATH*. Keep in mind the path where you choose to install anaconda.
 2. Only download the *script_files* folder for [Windows](https://github.com/chgodard/hesperos/tree/main/script_files/for_Windows) or [Macos](https://github.com/chgodard/hesperos/tree/main/script_files/for_Macos). 
@@ -80,7 +80,7 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
 8. In Napari, use the Hesperos plugin with *Plugins/hesperos*.
 
     
-### Manual installation
+## Manual installation
 1. Install [Anaconda] and unselect *Add to PATH*.
 2. Open your Anaconda prompt command.
 3. Create a virtual environment with Python 3.8 / 3.9 / 3.10:
@@ -101,7 +101,7 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     napari
     ```
     
-### Upgrade Hesperos version
+## Upgrade Hesperos version
 1. Double click on the **run_hesperos file** to run Napari. 
 2. In Napari: 
     1. Go to *Plugins/Install Plugins...*
@@ -110,7 +110,7 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     4. When the installation is done, close Napari. A restart of Napari is required to finish the plugin installation.
    
     
-## Hesperos: *Manual Segmentation and Correction* mode
+# Hesperos: *Manual Segmentation and Correction* mode
 
 ---
 
@@ -118,7 +118,7 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
 
  <img src="https://github.com/chgodard/hesperos/assets/49953723/dfcf96a2-1c41-41b7-b931-22b6c6841d5e" width="1000px"/>
     
-### Import and adjust your image *(Panel 1)*
+## Import and adjust your image *(Panel 1)*
 
 The Hesperos plugin can be used with Digital Imaging and COmmunications in Medicine (DICOM), Neuroimaging Informatics Technology Initiative (NIfTI) or Tagged Image File Format (TIFF) images. To improve performances, use images that are located on your own disk.
 
@@ -140,7 +140,7 @@ The Hesperos plugin can be used with Digital Imaging and COmmunications in Medic
 
 
 
-### Layer controls
+## Layer controls
 
 When data is loading, two layers are created: the *`image`* layer and the *`annotations`* layer. Order in the layer list correspond to the overlayed order. By clicking on these layers you will have acces to different layer controls (at the top left corner of the application). All actions can be undone/redone with the Ctrl-Z/Shift-Ctrl-Z keyboard shortcuts. You can also hide a layer by clicking on its eye icon on the layer list.
     
@@ -173,12 +173,12 @@ When data is loading, two layers are created: the *`image`* layer and the *`anno
 - *`opacity`*: a slider to control the global opacity of the layer.
 
 
-### Manage oriented landmarks for the DIVA software *(Panel 2)*
+## Manage oriented landmarks for the DIVA software *(Panel 2)*
 
 
 
 
-### Annotate your image *(Panel 3)*
+## Annotate your image *(Panel 3)*
     
 Manual annotation and correction on the segmented file is done using the layer controls of the *`annotations`* layer. Click on the layer to display them.
 > You have to choose a structure to start annotating *(see 2.)*.
@@ -211,7 +211,7 @@ Manual annotation and correction on the segmented file is done using the layer c
         2. Click on the <img src="https://user-images.githubusercontent.com/49953723/193262703-2b2ea2dc-24fa-438b-a75c-3aa42b210f53.PNG" width="30px"/> button  => change the button to <img src="https://user-images.githubusercontent.com/49953723/193262706-40f3dbca-5589-406d-81e8-e150ae8bfab6.PNG" width="30px"/> and "unlock" the slice.
 
 
-### Select slices of interest *(Panel 4)*
+## Select slices of interest *(Panel 4)*
 
 A maxiumum of 10 slices can be selected in a 3D image and the corresponding indexes will be integrated in the metadata during the exportation of the segmentation file.
    
@@ -224,7 +224,7 @@ A maxiumum of 10 slices can be selected in a 3D image and the corresponding inde
 - <img src="https://github.com/chgodard/hesperos/assets/49953723/4d1e50b7-2eb2-4e5e-b486-d159f78948ae" width="150px"/> : a drop-down menu containing the list of slice selected indexes. Select an index from the list to work with it more easily.
 
 
-### Export annotations *(Panel 5)*
+## Export annotations *(Panel 5)*
     
 1. Annotations can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/201735102-113f64b7-4da4-40ee-b058-9900268d270d.png" width="95px"/> button in one of the two following saving mode:
     - *`Unique`*: segmented data is exported as a unique 3D image with corresponding label ids (1-2-3-...). This file can be re-opened in the application.
@@ -234,7 +234,7 @@ A maxiumum of 10 slices can be selected in a 3D image and the corresponding inde
     > This process can slow down the display if the image is large.
     {: .prompt-warning }
 
-## Hesperos: *OneShot Segmentation* mode
+# Hesperos: *OneShot Segmentation* mode
 
 ---
 
@@ -250,12 +250,12 @@ The principle is to accelerate the segmentation without prior information. The p
 <img src="https://user-images.githubusercontent.com/49953723/193262714-8699cd59-3825-4d71-b27a-bbcad1e36d55.PNG" width="1000px"/>
 
     
-### Import and adjust your image *(Panel 1)*
+## Import and adjust your image *(Panel 1)*
     
 Same panel as the *Manual Segmentation and Correction* mode.
    
     
-### Annotate your image *(Panel 2)*
+## Annotate your image *(Panel 2)*
     
 Annotations and corrections on the segmented file is done using the layer controls of the *`annotations`* layer. Click on the layer to display them. Only two labels are available: *`Structure of interest`* and *`Other`*. 
 
@@ -273,7 +273,7 @@ To achieve that, the user has to:
 2. All actions can be undone with the <img src="https://user-images.githubusercontent.com/49953723/193265848-8c458035-609a-433e-aa82-5d9588971425.PNG" width="30px"/> button or Ctrl-Z.
 
     
-### Run automatic segmentation *(Panel 3)*
+## Run automatic segmentation *(Panel 3)*
 
 From the previously tagged pixels, features are extracted and used to train a basic classifier : the Random Forest Classifier (RFC). When the training of the pixel classifier is done, it is applied to each pixel of the complete volume and outputs a probability to belong to the structure of interest.
 
@@ -290,14 +290,14 @@ To run training and inference, click on the <img src="https://user-images.github
 {: .prompt-tip }
     
     
-### Export annotations *(Panel 4)*
+## Export annotations *(Panel 4)*
     
 1. Segmented probabilites can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/193262734-57159a97-2f46-4aba-b3bf-b55a35dfacbd.PNG" width="105px"/> button. The image is exported as a unique 3D binary image (value 0 and 255). This file can be re-opened in the application for correction.
 2. Probabilities can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/193262733-26e37392-55b2-4c36-9287-b2f5d8d30e03.PNG" width="105px"/> button as a unique 3D image. The probabilities image is normed between 0 and 255.
 3. <img src="https://user-images.githubusercontent.com/49953723/193266056-9514b648-b3e0-43f5-901a-a45fa1390f00.PNG" width="100px"/>: delete annotation data.
 
 
-## License
+# License
 
 ---
 
