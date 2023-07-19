@@ -254,17 +254,17 @@ i {
   }
 }
 
-#access-lastmod {
-  a {
-    &:hover {
-      @extend %link-hover;
-    }
+// #access-lastmod {
+//   a {
+//     &:hover {
+//       @extend %link-hover;
+//     }
 
-    @extend %no-bottom-border;
+//     @extend %no-bottom-border;
 
-    color: inherit;
-  }
-}
+//     color: inherit;
+//   }
+// }
 
 .footnotes > ol {
   padding-left: 2rem;
