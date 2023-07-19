@@ -104,8 +104,11 @@
     display: none;
   }
 
+  // hr {
+  //   border-color: var(--main-border-color);
+  // }
   hr {
-    border-color: var(--main-border-color);
+    border-color: rgb(205, 209, 209);
   }
 
   /* categories */
