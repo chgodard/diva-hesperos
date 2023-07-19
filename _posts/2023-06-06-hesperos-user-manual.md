@@ -17,8 +17,6 @@ tags: [user_manual]
 A Napari plugin for pre-defined manual segmentation or semi-automatic segmentation with a one-shot learning procedure. The objective was to simplify the interface as much as possible so that the user can concentrate on annotation tasks using a pen on a tablet, or a mouse on a computer. 
     
 This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
-
-    
 <!-- # Table of Contents
 - [Installation and Usage](#installation-and-usage)
     * [Automatic installation](#automatic-installation)
@@ -38,8 +36,7 @@ This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookie
     * [Export annotations](#export-annotations-panel-4) -->
 
 
----        
-## Installation and Usage
+## INSTALLATION AND USAGE
 ---
 
 The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Python 3.8 / 3.9 / 3.10.
@@ -112,9 +109,8 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     3. Click on *Update* if a new version of Hesperos has been found. You can check the latest version of Hesperos in the [Napari Hub](https://www.napari-hub.org/plugins/hesperos).
     4. When the installation is done, close Napari. A restart of Napari is required to finish the plugin installation.
    
-
---- 
-## Hesperos: *Manual Segmentation and Correction* mode
+ 
+## HEPEROS: *MANUAL SEGMENTATION AND CORRECTION* MODE
 ---
 
 
@@ -238,8 +234,7 @@ A maxiumum of 10 slices can be selected in a 3D image and the corresponding inde
     > This process can slow down the display if the image is large.
     {: .prompt-warning }
 
----
-## Hesperos: *OneShot Segmentation* mode
+## HESPEROS: *ONESHOT SEGMENTATION* MODE
 ---
 
  The ***OneShot Segmentation*** mode of the Hesperos plugin is a 2D version of the VoxelLearning method implemented in DIVA (see [our Github](https://github.com/DecBayComp/VoxelLearning) and the latest article [Guérinot, C., Marcon, V., Godard, C., et al. (2022). New Approach to Accelerated Image Annotation by Leveraging Virtual Reality and Cloud Computing. _Frontiers in Bioinformatics_. doi:10.3389/fbinf.2021.777101](https://www.frontiersin.org/articles/10.3389/fbinf.2021.777101/full)).
@@ -300,8 +295,7 @@ To run training and inference, click on the <img src="https://user-images.github
 2. Probabilities can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/193262733-26e37392-55b2-4c36-9287-b2f5d8d30e03.PNG" width="105px"/> button as a unique 3D image. The probabilities image is normed between 0 and 255.
 3. <img src="https://user-images.githubusercontent.com/49953723/193266056-9514b648-b3e0-43f5-901a-a45fa1390f00.PNG" width="100px"/>: delete annotation data.
 
----
-## License
+## LICENSE
 ---
 
 Distributed under the terms of the [BSD-3] license, **Hesperos** is a free and open source software.
