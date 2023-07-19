@@ -110,7 +110,7 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     4. When the installation is done, close Napari. A restart of Napari is required to finish the plugin installation.
    
  
-## HEPEROS: *MANUAL SEGMENTATION AND CORRECTION* MODE
+## HESPEROS: *MANUAL SEGMENTATION AND CORRECTION* MODE
 ---
 
 
