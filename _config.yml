@@ -127,6 +127,7 @@ kramdown:
       line_numbers: true
       start_line: 1
   hard_warp: true
+  toc_levels: 1, 2, 3
 
 collections:
   tabs:

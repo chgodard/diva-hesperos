@@ -40,14 +40,14 @@ This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookie
     * [Export annotations](#export-annotations-panel-4) -->
 
         
-## Installation and Usage
+# Installation and Usage
 
 ---
 
 The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Python 3.8 / 3.9 / 3.10.
      
     
-### Automatic installation  
+## Automatic installation  
 
 1. Install [Anaconda] and unselect *Add to PATH*. Keep in mind the path where you choose to install anaconda.
 2. Only download the *script_files* folder for [Windows](https://github.com/chgodard/hesperos/tree/main/script_files/for_Windows) or [Macos](https://github.com/chgodard/hesperos/tree/main/script_files/for_Macos). 
