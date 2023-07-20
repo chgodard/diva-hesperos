@@ -17,7 +17,7 @@ Hesperos is a [napari] plugin for pre-defined manual segmentation or semi-automa
 > This plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
 {: .prompt-info }
 
-## Installation and Usage
+## **Installation and Usage**
 ---
 
 The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Python 3.8 / 3.9 / 3.10.
@@ -91,7 +91,7 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     4. When the installation is done, close Napari. A restart of Napari is required to finish the plugin installation.
    
  
-## Manual Segmentation and Correction mode
+## **Manual Segmentation and Correction mode**
 ---
 
 
@@ -218,7 +218,7 @@ A maxiumum of 10 slices can be selected in a 3D image and the corresponding inde
     > This process can slow down the display if the image is large.
     {: .prompt-warning }
 
-## OneShot Segmentation mode
+## **OneShot Segmentation mode**
 ---
 
  The **OneShot Segmentation** mode of the Hesperos plugin is a 2D version of the VoxelLearning method implemented in DIVA (see [our Github](https://github.com/DecBayComp/VoxelLearning) and the latest article [Guérinot, C., Marcon, V., Godard, C., et al. (2022). New Approach to Accelerated Image Annotation by Leveraging Virtual Reality and Cloud Computing. _Frontiers in Bioinformatics_. doi:10.3389/fbinf.2021.777101](https://www.frontiersin.org/articles/10.3389/fbinf.2021.777101/full)).
