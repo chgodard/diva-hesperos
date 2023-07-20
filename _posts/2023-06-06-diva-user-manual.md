@@ -2,6 +2,8 @@
 title : DIVA User Manual
 date : 2023-07-12 17:00:00 +0800
 tags: [user_manual]
+image:
+    path: https://github.com/DecBayComp/VoxelLearning/assets/49953723/20ade68e-e562-471e-98d1-02e43c343741
 ---
 
     
