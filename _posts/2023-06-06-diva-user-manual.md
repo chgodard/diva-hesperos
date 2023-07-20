@@ -57,7 +57,9 @@ TODO IN DETAILS
 ---
 Importation can then be done in DIVA using the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/79998e80-0de4-406b-a847-421edb5d87c6" width="20px"/> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
  
-<img align="left" src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/2273efab-4c21-45d3-83d0-8b48bcae848b" width="80px"/> 
+<!-- <img align="left" src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/2273efab-4c21-45d3-83d0-8b48bcae848b" width="80px"/>  -->
+
+![Desktop View](https://github.com/DecBayComp/VoxelLearning/assets/49953723/2273efab-4c21-45d3-83d0-8b48bcae848b){: width="80px" height="80px" .w-50 .left}
 
 > If you see this type of behavior after loading your image in DIVA, press R in your keyboard to reload the image and correct the rendering artefact.
 {: .prompt-warning }
