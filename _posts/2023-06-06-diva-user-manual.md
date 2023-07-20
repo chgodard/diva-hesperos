@@ -20,7 +20,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 
 1. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)).
 2. Install [SteamVR](https://www.steamvr.com/fr/) required to use VR functions.
-3. Install DIVA : load the [*diva_TOCOMPLETE* folder](/diva_voxel_learning) and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
+3. Install DIVA : load the [*diva_TOCOMPLETE* folder]() and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
   
 > Launch SteamVR before DIVA software if you want to use VR environment
   {: .prompt-warning }
@@ -89,6 +89,6 @@ In the VR environment, you can iteract with the volume with the VR controller, s
    
   
 # Example
-You will find in [here](/materials/data_examples/) different applications of **Voxel Learning** on CT scans, MRI and microscopy images. Raw data in TIFF format is available with an adapted transfer function to ensure correct visualization, as well as an expert segmentation of the tumor. Tagging file in the format JSON can be loaded to see which tags were used to train the different models. We propose in the folder all the different learners available (for more details see the [folder_structure file](/folder_structure.md)).
+You will find in [here]() different applications of **Voxel Learning** on CT scans, MRI and microscopy images. Raw data in TIFF format is available with an adapted transfer function to ensure correct visualization, as well as an expert segmentation of the tumor. Tagging file in the format JSON can be loaded to see which tags were used to train the different models.
  
  <!-- </div> -->
