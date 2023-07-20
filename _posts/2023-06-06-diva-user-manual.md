@@ -65,7 +65,7 @@ Importation can then be done in DIVA using the <img src="https://github.com/DecB
 
 Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67" width="20px"/> or <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659" width="20px"/> icon. 
  
- <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif" width="480" height="270"/>
+ <!-- <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif" width="480" height="270"/> -->
  
 As shown on the video above with a CT-scan of lung tumor, this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. 
  
@@ -81,7 +81,7 @@ Switching to and from the VR mode is performed by clicking on <img src="https://
 > This button will not respond if SteamVR is not installed.  
 {: .prompt-danger }
 
-<img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TAGS.gif" width="480" height="270"/> 
+<!-- <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TAGS.gif" width="480" height="270"/>  -->
 
 In the VR environment, you can iteract with the volume with the VR controller, see details [here](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the controller by clicking on the <img src="materials/diva_buttons/plus.png" width="15px"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/tagging.png" width="20px"/> and on the **Export** button.
    
