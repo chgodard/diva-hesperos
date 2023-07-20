@@ -7,36 +7,17 @@ tags: [user_manual]
     
 <!-- <div align="justify"> -->
     
-<!-- [![License](https://img.shields.io/pypi/l/hesperos.svg?color=green)](https://github.com/DBC/hesperos/raw/main/LICENSE)
+[![License](https://img.shields.io/pypi/l/hesperos.svg?color=green)](https://github.com/chgodard/hesperos/raw/main/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/hesperos.svg?color=green)](https://pypi.org/project/hesperos)
 [![Python Version](https://img.shields.io/pypi/pyversions/hesperos.svg?color=green)](https://python.org)
-[![tests](https://github.com/DBC/hesperos/workflows/tests/badge.svg)](https://github.com/DBC/hesperos/actions)
-[![codecov](https://codecov.io/gh/DBC/hesperos/branch/main/graph/badge.svg)](https://codecov.io/gh/DBC/hesperos)
-[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/hesperos)](https://napari-hub.org/plugins/hesperos) -->
+[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/hesperos)](https://napari-hub.org/plugins/hesperos)
 
-A Napari plugin for pre-defined manual segmentation or semi-automatic segmentation with a one-shot learning procedure. The objective was to simplify the interface as much as possible so that the user can concentrate on annotation tasks using a pen on a tablet, or a mouse on a computer. 
+Hesperos is a [napari] plugin for pre-defined manual segmentation or semi-automatic segmentation with a one-shot learning procedure. The objective was to simplify the interface as much as possible so that the user can concentrate on annotation tasks using a pen on a tablet, or a mouse on a computer. 
     
-This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
-<!-- # Table of Contents
-- [Installation and Usage](#installation-and-usage)
-    * [Automatic installation](#automatic-installation)
-    * [Manual installation](#manual-installation)
-    * [Upgrade Hesperos version](#upgrade-hesperos-version)
-- [Hesperos: *Manual Segmentation and Correction* mode](#hesperos-manual-segmentation-and-correction-mode)
-    * [Import and adjust your image](#import-and-adjust-your-image-panel-1)
-    * [Layer controls](#layer-controls)
-    * [Manage oriented landmarks for the DIVA software](#manage-oriented-landmarks-for-the-diva-software-panel-2)
-    * [Annotate your image](#annotate-your-image-panel-3)
-    * [Select slices of interest](#select-slices-of-interest-panel-4)
-    * [Export annotations](#export-annotations-panel-5)
-- [Hesperos: *OneShot Segmentation* mode](#hesperos-oneshot-segmentation-mode)
-    * [Import and adjust your image](#import-and-adjust-your-image-panel-1)
-    * [Annotate your image](#annotate-your-image-panel-2)
-    * [Run automatic segmentation](#run-automatic-segmentation-panel-3)
-    * [Export annotations](#export-annotations-panel-4) -->
+> This plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
+{: .prompt-info }
 
-
-## INSTALLATION AND USAGE
+## Installation and Usage
 ---
 
 The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Python 3.8 / 3.9 / 3.10.
@@ -110,11 +91,11 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     4. When the installation is done, close Napari. A restart of Napari is required to finish the plugin installation.
    
  
-## HESPEROS: *MANUAL SEGMENTATION AND CORRECTION* MODE
+## Manual Segmentation and Correction mode
 ---
 
 
- The ***Manual Segmentation and Correction*** mode of the Hesperos plugin is a simplified and optimized interface to do basic 2D manual segmentation of several structures in a 3D image using a mouse or a stylet with a tablet.
+ The **Manual Segmentation and Correction** mode of the Hesperos plugin is a simplified and optimized interface to do basic 2D manual segmentation of several structures in a 3D image using a mouse or a stylet with a tablet.
 
  <img src="https://github.com/chgodard/hesperos/assets/49953723/dfcf96a2-1c41-41b7-b931-22b6c6841d5e" width="1000px"/>
     
@@ -127,11 +108,14 @@ The Hesperos plugin can be used with Digital Imaging and COmmunications in Medic
     - use the <img src="https://user-images.githubusercontent.com/49953723/193262624-149a4461-fbac-4498-a2b8-33bdd88e3a9f.PNG" width="100px"/> button for a DICOM serie
     > Folder with multiple DICOM series is not supported. 
     {: .prompt-warning }
+
 2. After the image has loaded, a slider appears that allows to zoom in/out: <img src="https://user-images.githubusercontent.com/49953723/193262738-7e6e68a9-0890-4e18-92a9-dbf2168a6bb5.PNG" width="100px"/>. Zooming is also possible with the <img src="https://user-images.githubusercontent.com/49953723/193262725-7d4f7b09-d119-45cf-a9d4-c42c5f848c1a.PNG" width="25px"/> button in the layer controls panel. 
+
 3. If your data is a DICOM serie, you have the possibility to directly change the contrast of the image (according to the Hounsfield Unit):
     - by choosing one of the two predefined contrasts: *CT bone* or *CT Soft* in <img src="https://user-images.githubusercontent.com/49953723/193262708-17e1d301-0a9a-497f-9feb-613e69893c06.PNG" width="150px"/>.
     - by creating a custom default contrast with the <img src="https://user-images.githubusercontent.com/49953723/193262707-466917b4-b885-429b-9924-6481fa6410bb.PNG" width="30px"/> button and selecting *Custom Contrast*. Settings can be exported as a .json file with the <img src="https://user-images.githubusercontent.com/49953723/193262709-e1ad5321-1f60-4b60-a715-7c494670e1cd.PNG" width="30px"/> button.
     - by loading a saved default contrast with the <img src="https://user-images.githubusercontent.com/49953723/193262710-c9f66354-f896-4e59-8718-70e5509875af.PNG" width="30px"/> button and selecting *Custom Contrast*.
+
 4. In the bottom left corner of the application you also have the possibility to:
     - <img src="https://github.com/chgodard/hesperos/assets/49953723/19eb4f30-2dd2-41f0-b2ed-1657db30609a" width="25px"/>: switch from 2D view to 3D view. Then the button becomes <img src="https://github.com/chgodard/hesperos/assets/49953723/64a65eb4-d3ec-493c-add9-3a1482f9e04e" width="25px"/> to switch back. 
     - <img src="https://user-images.githubusercontent.com/49953723/193262716-d9947eb9-d87f-4251-af76-2d906cd36018.PNG" width="25px"/>: change the order of the visible axis (for example go to sagittal, axial or coronal planes).
@@ -234,10 +218,10 @@ A maxiumum of 10 slices can be selected in a 3D image and the corresponding inde
     > This process can slow down the display if the image is large.
     {: .prompt-warning }
 
-## HESPEROS: *ONESHOT SEGMENTATION* MODE
+## OneShot Segmentation mode
 ---
 
- The ***OneShot Segmentation*** mode of the Hesperos plugin is a 2D version of the VoxelLearning method implemented in DIVA (see [our Github](https://github.com/DecBayComp/VoxelLearning) and the latest article [Guérinot, C., Marcon, V., Godard, C., et al. (2022). New Approach to Accelerated Image Annotation by Leveraging Virtual Reality and Cloud Computing. _Frontiers in Bioinformatics_. doi:10.3389/fbinf.2021.777101](https://www.frontiersin.org/articles/10.3389/fbinf.2021.777101/full)).
+ The **OneShot Segmentation** mode of the Hesperos plugin is a 2D version of the VoxelLearning method implemented in DIVA (see [our Github](https://github.com/DecBayComp/VoxelLearning) and the latest article [Guérinot, C., Marcon, V., Godard, C., et al. (2022). New Approach to Accelerated Image Annotation by Leveraging Virtual Reality and Cloud Computing. _Frontiers in Bioinformatics_. doi:10.3389/fbinf.2021.777101](https://www.frontiersin.org/articles/10.3389/fbinf.2021.777101/full)).
     
 
 The principle is to accelerate the segmentation without prior information. The procedure consists of:
@@ -251,7 +235,7 @@ The principle is to accelerate the segmentation without prior information. The p
     
 ### Import and adjust your image *(Panel 1)*
 ---   
-Same panel as the *Manual Segmentation and Correction* mode.
+Same panel as the Manual Segmentation and Correction mode.
    
     
 ### Annotate your image *(Panel 2)*
@@ -295,7 +279,7 @@ To run training and inference, click on the <img src="https://user-images.github
 2. Probabilities can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/193262733-26e37392-55b2-4c36-9287-b2f5d8d30e03.PNG" width="105px"/> button as a unique 3D image. The probabilities image is normed between 0 and 255.
 3. <img src="https://user-images.githubusercontent.com/49953723/193266056-9514b648-b3e0-43f5-901a-a45fa1390f00.PNG" width="100px"/>: delete annotation data.
 
-## LICENSE
+## License
 ---
 
 Distributed under the terms of the [BSD-3] license, **Hesperos** is a free and open source software.
