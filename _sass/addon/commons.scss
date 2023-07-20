@@ -100,7 +100,7 @@ img {
       box-shadow: none !important; /* cover the Bootstrap 4.6.1 styles */
     }
 
-    @extend %img-caption;
+    // @extend %img-caption;
   }
 
   @-webkit-keyframes fade-in {
@@ -410,7 +410,7 @@ i {
   a {
     &.popup {
       @extend %no-cursor;
-      @extend %img-caption;
+      // @extend %img-caption;
       @include mt-mb(0.5rem);
 
       cursor: zoom-in;

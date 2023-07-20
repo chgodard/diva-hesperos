@@ -26,17 +26,22 @@
   color: var(--text-color);
 }
 
+.inline-image{
+  display: inline-flex;
+}
+
 .preview-img {
   overflow: hidden;
   aspect-ratio: 40 / 21;
 
   @extend %rounded;
 
-  &:not(.no-bg) {
-    img.lazyloaded {
-      background: var(--img-bg);
-    }
-  }
+  // uncomment to allow transparent background for the preview image as logo
+  // &:not(.no-bg) {
+  //   img.lazyloaded {
+  //     background: var(--img-bg);
+  //   }
+  // }
 
   img {
     -o-object-fit: cover;

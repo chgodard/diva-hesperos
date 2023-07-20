@@ -5,7 +5,7 @@ tags: [user_manual]
 ---
 
     
-<!-- <div align="justify"> -->
+<div align="justify">
     
 [![License](https://img.shields.io/pypi/l/hesperos.svg?color=green)](https://github.com/chgodard/hesperos/raw/main/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/hesperos.svg?color=green)](https://pypi.org/project/hesperos)
@@ -29,15 +29,15 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
 1. Install [Anaconda] and unselect *Add to PATH*. Keep in mind the path where you choose to install anaconda.
 2. Only download the *script_files* folder for [Windows](https://github.com/chgodard/hesperos/tree/main/script_files/for_Windows) or [Macos](https://github.com/chgodard/hesperos/tree/main/script_files/for_Macos). 
 3. Add your Anaconda path in these script files:
-    1. <ins>For Windows</ins>: 
+    - <ins>For Windows</ins>: 
     Right click on the .bat files (for [installation](https://github.com/chgodard/hesperos/blob/main/script_files/for_Windows/install_hesperos_env.bat) and [running](https://github.com/chgodard/hesperos/blob/main/script_files/for_Windows/run_hesperos.bat)) and select *Modify*. Change *PATH_TO_ADD* with your Anaconda path. Then save the changes.
-        > for exemple:
+        > exemple:
         ```
         anaconda_dir=C:\Users\chgodard\anaconda3
         ```
-    2. <ins>For Macos</ins>:
+    - <ins>For Macos</ins>:
         1. Right click on the .command files (for [installation](https://github.com/chgodard/hesperos/blob/main/script_files/for_Macos/install_hesperos_env.command) and [running](https://github.com/chgodard/hesperos/blob/main/script_files/for_Macos/run_hesperos.command)) and select *Open with TextEdit*. Change *PATH_TO_ADD* with your Anaconda path. Then save the changes.
-            > for exemple:
+            > exemple:
             ```
             source ~/opt/anaconda3/etc/profile.d/conda.sh
             ```
@@ -105,12 +105,11 @@ The Hesperos plugin can be used with Digital Imaging and COmmunications in Medic
 
 1. To import data:
     - use the <img src="https://user-images.githubusercontent.com/49953723/193262334-3c28e733-36ab-4504-9a6d-acd298c15994.PNG" width="100px"/> button for *(.tiff, .tif, .nii or .nii.gz)* image files.
-    - use the <img src="https://user-images.githubusercontent.com/49953723/193262624-149a4461-fbac-4498-a2b8-33bdd88e3a9f.PNG" width="100px"/> button for a DICOM serie
+    - use the <img src="https://user-images.githubusercontent.com/49953723/193262624-149a4461-fbac-4498-a2b8-33bdd88e3a9f.PNG" width="100px"/> button for a DICOM serie.
+
     > Folder with multiple DICOM series is not supported. 
     {: .prompt-warning }
-
-2. After the image has loaded, a slider appears that allows to zoom in/out: <img src="https://user-images.githubusercontent.com/49953723/193262738-7e6e68a9-0890-4e18-92a9-dbf2168a6bb5.PNG" width="100px"/>. Zooming is also possible with the <img src="https://user-images.githubusercontent.com/49953723/193262725-7d4f7b09-d119-45cf-a9d4-c42c5f848c1a.PNG" width="25px"/> button in the layer controls panel. 
-
+2. After the image has loaded, a slider appears that allows to zoom in/out: <img src="https://github.com/chgodard/hesperos/assets/49953723/a33c57de-4481-4274-9b7d-84ec30ae7d06" width="25px"/>. Zooming is also possible with the <img src="https://github.com/chgodard/hesperos/assets/49953723/9c22e139-b9be-4546-8bff-0815f9df71a7" width="100px"/> button in the layer controls panel.
 3. If your data is a DICOM serie, you have the possibility to directly change the contrast of the image (according to the Hounsfield Unit):
     - by choosing one of the two predefined contrasts: *CT bone* or *CT Soft* in <img src="https://user-images.githubusercontent.com/49953723/193262708-17e1d301-0a9a-497f-9feb-613e69893c06.PNG" width="150px"/>.
     - by creating a custom default contrast with the <img src="https://user-images.githubusercontent.com/49953723/193262707-466917b4-b885-429b-9924-6481fa6410bb.PNG" width="30px"/> button and selecting *Custom Contrast*. Settings can be exported as a .json file with the <img src="https://user-images.githubusercontent.com/49953723/193262709-e1ad5321-1f60-4b60-a715-7c494670e1cd.PNG" width="30px"/> button.
@@ -146,7 +145,7 @@ When data is loading, two layers are created: the *`image`* layer and the *`anno
 - *`show selected`*: if selected, only the selected label will be display on the layer; if not selected, all labels are displayed.
    
     
->*Remark*: a second option for filling has been added
+>A second option for filling has been added
 >1. Drawn the egde of a closed shape with the paint brush mode.  
 >2. Double click to activate the fill bucket.  
 >3. Click inside the closed area to fill it.  
@@ -179,11 +178,10 @@ Manual annotation and correction on the segmented file is done using the layer c
     - *`Shoulder`*: to annotate bones and muscles for shoulder surgery.
     - *`Shoulder Bones`*: to annotate only few bones for shoulder surgery.
     
-> When selecting a structure, a new panel appears with a list of elements to annotate. Each element has its own label and color. Select one element in the list to automatically activate the paint brush mode with the corresponding color (color is updated in the *`label`* rectangle in the layer controls panel).
-{: .prompt-tip }
+    > When selecting a structure, a new panel appears with a list of elements to annotate. Each element has its own label and color. Select one element in the list to automatically activate the paint brush mode with the corresponding color (color is updated in the *`label`* rectangle in the layer controls panel).
+    {: .prompt-tip }
     
 3. All actions can be undone with the <img src="https://user-images.githubusercontent.com/49953723/193265848-8c458035-609a-433e-aa82-5d9588971425.PNG" width="30px"/> button or Ctrl-Z.
-    
 4. If you need to work on a specific slice of your 3D image, but also have to explore the volume to understand some complex structures, you can use the locking option to facilitate the annotation task.
     - <ins>To activate the functionality</ins>: 
         1. Go to the slice of interest.
@@ -267,7 +265,7 @@ To run training and inference, click on the <img src="https://user-images.github
     - the *`probabilities`* layer which corresponds to the direct probability (between 0 and 1) of a pixel to belong to the structure of interest. This layer is disabled by default, to enable it click on its eye icon in the layer list.
     - the *`segmented probabilities`* layer which corresponds to a binary image obtained from the probability image normed and thresholded according to a value manually defined with the *`Probability threshold`* slider: <img src="https://user-images.githubusercontent.com/49953723/193262730-6998c8a5-92f1-4ff1-bbf5-6972a373afd2.PNG" width="80px"/>.
 
->Remark: If the output is not perfect, you have two possibilities to improve the result:
+>If the output is not perfect, you have two possibilities to improve the result:
 >1. Add some tags with the paint brush to take in consideration unintersting structures or add information in critical areas of your structure of interest (such as in thin sections). Then, run the training and inference process again. /!\ This will overwrite all previous segmentation data.
 >2. Export your segmentation data and re-open it with the *Manual Annotation and Correction* mode of Hesperos to manually erase or add annotations.
 {: .prompt-tip }

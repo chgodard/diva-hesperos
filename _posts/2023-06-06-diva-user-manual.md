@@ -7,9 +7,9 @@ image:
 ---
 
     
-<!-- <div align="justify"> -->
+<div align="justify">
 
-<img align="left" src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/20ade68e-e562-471e-98d1-02e43c343741" width="200px"/>
+<!-- <img align="left" src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/20ade68e-e562-471e-98d1-02e43c343741" width="200px"/> -->
 
  **DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D microscopy image stacks and enables efficient visualization and quantification in VR without pre-treatment. 
 
@@ -30,6 +30,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 
  
 ## **Import your image**
+---
 
 ### Data requirements
 ---
@@ -44,31 +45,35 @@ The DIVA software can be used with Digital Imaging and COmmunications in Medicin
  ---
 TODO IN DETAILS
 
- 1) Open the DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
+ 1. Open the DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
     - View stack with : Hyperstack
     - Group files with similar names : ON
     - Open all series : ON
     - All other options are OFF
-2) Improve visualization with *Image/Adjust/Brightness* => Click on **Auto**
-3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
-4) Save as TIFF format : *File/Save As/Tiff*
+2. Improve visualization with *Image/Adjust/Brightness* => Click on **Auto**
+3. Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
+4. Save as TIFF format : *File/Save As/Tiff*
 
 ### Importation in DIVA
 ---
-Importation can then be done in DIVA using the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/79998e80-0de4-406b-a847-421edb5d87c6" width="20px"/> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
+Importation can then be done in DIVA using the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/79998e80-0de4-406b-a847-421edb5d87c6" width="20px"> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
  
 <!-- <img align="left" src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/2273efab-4c21-45d3-83d0-8b48bcae848b" width="80px"/>  -->
 
-![Desktop View](https://github.com/DecBayComp/VoxelLearning/assets/49953723/2273efab-4c21-45d3-83d0-8b48bcae848b){: width="80px" height="80px" .w-50 .left}
+![Desktop View](https://github.com/DecBayComp/VoxelLearning/assets/49953723/2273efab-4c21-45d3-83d0-8b48bcae848b){: width="100px" height="100px" .w-20 .left}
 
 > If you see this type of behavior after loading your image in DIVA, press R in your keyboard to reload the image and correct the rendering artefact.
-{: .prompt-warning }
+<!-- {: .prompt-warning } -->
+
+
   
 ##  **Improve visualization**
 ---
+<!-- 
+Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67" style="float" width="20px"/> or <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659" width="20px"/> icon.  -->
 
-Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67" width="20px"/> or <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659" width="20px"/> icon. 
- 
+Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under ![image](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67){:.inline-image width="20px" height="20px"} or ![image2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659){:.inline-image width="20px" height="20px"} icon. 
+
  <!-- <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif" width="480" height="270"/> -->
  
 As shown on the video above with a CT-scan of lung tumor, this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. 
