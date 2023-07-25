@@ -377,15 +377,15 @@ i {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
-
-  p {
-    > img[data-src],
-    > a.popup {
-      &:not(.normal):not(.left):not(.right) {
-        @include align-center;
-      }
-    }
-  }
+  // uncomment to fix issue with inline images
+  // p {
+  //   > img[data-src],
+  //   > a.popup {
+  //     &:not(.normal):not(.left):not(.right) {
+  //       @include align-center;
+  //     }
+  //   }
+  // }
 }
 
 .post-meta {
