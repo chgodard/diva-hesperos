@@ -88,9 +88,9 @@ You can enable or disable each channel independently by right- or left-clicking 
 ---
 Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under ![image](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67){:.inline-image width="20px" height="20px"} or ![image2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659){:.inline-image width="20px" height="20px"} icon. 
  
-<!-- <img align="center" src="https://github.com/DecBayComp/VoxelLearning/blob/main/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif?raw=true"/> -->
+<img align="center" src="https://github.com/DecBayComp/VoxelLearning/blob/main/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif?raw=true"/>
 
-<img align="center" src="/assets/video/demo_TF1D.mp4"/>
+<!-- <img align="center" src="/assets/video/demo_TF1D.mp4"/> -->
 
 As shown on the video above with a CT-scan of lung tumor, this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. 
  
