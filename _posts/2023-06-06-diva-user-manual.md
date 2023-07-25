@@ -71,7 +71,7 @@ This is the step you can realized in [ImageJ/Fiji](https://imagej.net/software/f
 
 ### Importation in DIVA
 ---
-DIVA automatically transform a stack of images as a 3D volume. Importation can then be done in DIVA using the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/79998e80-0de4-406b-a847-421edb5d87c6" width="20px" height="20px"/> button with the *TIFF* or *DICOM* option (in the top-left corner) which opens a file browser or by drag-and-dropping your file direclty. 
+DIVA automatically transform a stack of images as a 3D volume. Importation can then be done in DIVA using the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/79998e80-0de4-406b-a847-421edb5d87c6" width="20px" height="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/8aa81fdd-8fc0-4ff3-b487-e189406842c9" width="20px" height="20px" class="dark"/> button with the *TIFF* or *DICOM* option (in the top-left corner) which opens a file browser or by drag-and-dropping your file direclty. 
 
 
 ![Desktop View](https://github.com/DecBayComp/VoxelLearning/assets/49953723/2273efab-4c21-45d3-83d0-8b48bcae848b){: width="80px" height="80px" .right}
@@ -86,7 +86,7 @@ You can enable or disable each channel independently by right- or left-clicking 
 
 ##  **IMPROVE VISUALIZATION**
 ---
-Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under ![image](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67){:.inline-image width="20px" height="20px"} or ![image2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659){:.inline-image width="20px" height="20px"} icon. 
+Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under ![channel1](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67){:.inline-image width="20px" height="20px" .light} ![channel1](https://github.com/DecBayComp/VoxelLearning/assets/49953723/fdb49542-fb08-431d-885f-a029bf62ebac){:.inline-image width="20px" height="20px" .dark} or ![chanel2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659){:.inline-image width="20px" height="20px" .light} ![chanel2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/c1661a1f-241e-491f-a0e7-9f5de16814ab){:.inline-image width="20px" height="20px" .dark} icon. 
  
 <img align="center" src="https://github.com/DecBayComp/VoxelLearning/blob/main/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif?raw=true"/>
 
@@ -104,13 +104,13 @@ TODO explain les points, how to add point, chage TF type, ...
   
 ## **NAVIGATE IN VIRTUAL REALITY**
 --- 
-Switching to and from the VR mode is performed by clicking on <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/28a179d0-e410-4a72-b7a5-6b0a33f0fd6a" width="20px"/> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. 
+Switching to and from the VR mode is performed by clicking on <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/28a179d0-e410-4a72-b7a5-6b0a33f0fd6a" width="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/39e3d2e8-b415-43a4-a3c6-ff459e6af1bf" width="20px" class="dark"/> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. 
 > This button will not respond if SteamVR is not installed.  
 {: .prompt-danger }
 
 <!-- <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TAGS.gif" width="480" height="270"/>  -->
 
-In the VR environment, you can iteract with the volume with the VR controller, see details [here](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the controller by clicking on the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/35c93203-6e80-4a4e-849f-370bf26ba56d" width="15px"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/220632b6-990c-41e8-9046-52642ebac901" width="20px"/> and on the **Export** button.
+In the VR environment, you can iteract with the volume with the VR controller, see details [here](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the controller by clicking on the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/35c93203-6e80-4a4e-849f-370bf26ba56d" width="15px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/1d8f5852-b73f-434d-b7d7-cd10dc924cb7" width="15px" class="dark"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/220632b6-990c-41e8-9046-52642ebac901" width="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/2160bf27-b50e-49c3-9d95-065c67cd0315" width="20px" class="dark"/> and on the **Export** button.
    
  
 TODOCOMPLETE
