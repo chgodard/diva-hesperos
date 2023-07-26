@@ -17,7 +17,7 @@ Hesperos is a [napari] plugin for pre-defined manual segmentation or semi-automa
 > This plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
 {: .prompt-info }
 
-## **Installation and Usage**
+## **INSTALLATION AND USAGE**
 ---
 
 The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Python 3.8 / 3.9 / 3.10.
@@ -91,7 +91,7 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     4. When the installation is done, close Napari. A restart of Napari is required to finish the plugin installation.
    
  
-## **Manual Segmentation and Correction mode**
+## **MANUAL SEGMENTATION AND CORRECTION MODE**
 ---
 
 
@@ -101,7 +101,9 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     
 ### Import and adjust your image *(Panel 1)*
 ---
-The Hesperos plugin can be used with Digital Imaging and COmmunications in Medicine (DICOM), Neuroimaging Informatics Technology Initiative (NIfTI) or Tagged Image File Format (TIFF) images. To improve performances, use images that are located on your own disk.
+The Hesperos plugin can be used with Digital Imaging and COmmunications in Medicine (DICOM), Neuroimaging Informatics Technology Initiative (NIfTI) or Tagged Image File Format (TIFF) images.
+> To improve performances, use images that are located on your own disk.
+{: .prompt-tip }
 
 1. To import data:
     - use the <img src="https://user-images.githubusercontent.com/49953723/193262334-3c28e733-36ab-4504-9a6d-acd298c15994.PNG" width="100px"/> button for *(.tiff, .tif, .nii or .nii.gz)* image files.
@@ -125,8 +127,9 @@ The Hesperos plugin can be used with Digital Imaging and COmmunications in Medic
 
 ### Layer controls
 ---
-When data is loading, two layers are created: the *`image`* layer and the *`annotations`* layer. Order in the layer list correspond to the overlayed order. By clicking on these layers you will have acces to different layer controls (at the top left corner of the application). All actions can be undone/redone with the Ctrl-Z/Shift-Ctrl-Z keyboard shortcuts. You can also hide a layer by clicking on its eye icon on the layer list.
-    
+When data is loading, two layers are created: the *`image`* layer and the *`annotations`* layer. Order in the layer list correspond to the overlayed order. By clicking on these layers you will have access to different layer controls (at the top left corner of the application). You can also hide a layer by clicking on its eye icon on the layer list.
+> All actions can be undone/redone with the Ctrl-Z/Shift-Ctrl-Z keyboard shortcuts.
+{: .prompt-tip }
     
 <ins>For the *image* layer:</ins>
 - *`opacity`*: a slider to control the global opacity of the layer.
@@ -152,13 +155,17 @@ When data is loading, two layers are created: the *`image`* layer and the *`anno
 >4. Double click on the filled area to deactivate the fill bucket and reactivate the paint brush mode.
 {: .prompt-tip }
 
+> Use the keyboard shortcut "O" to enable/disable the *annotations* layer
+{: .prompt-tip }
+
+
 <ins>For the *orientations* and *landmarks* layers:</ins>
 - *`opacity`*: a slider to control the global opacity of the layer.
 
 
 ### Manage oriented landmarks for the DIVA software *(Panel 2)*
 ---
-
+See the [relative post](https://chgodard.github.io/diva-hesperos/posts/both/) for this functionnality.
 
 
 ### Annotate your image *(Panel 3)*
@@ -216,7 +223,7 @@ A maxiumum of 10 slices can be selected in a 3D image and the corresponding inde
     > This process can slow down the display if the image is large.
     {: .prompt-warning }
 
-## **OneShot Segmentation mode**
+## **ONESHOT SEGMENTATION MODE**
 ---
 
  The **OneShot Segmentation** mode of the Hesperos plugin is a 2D version of the VoxelLearning method implemented in DIVA (see [our Github](https://github.com/DecBayComp/VoxelLearning) and the latest article [Guérinot, C., Marcon, V., Godard, C., et al. (2022). New Approach to Accelerated Image Annotation by Leveraging Virtual Reality and Cloud Computing. _Frontiers in Bioinformatics_. doi:10.3389/fbinf.2021.777101](https://www.frontiersin.org/articles/10.3389/fbinf.2021.777101/full)).
@@ -238,16 +245,18 @@ Same panel as the Manual Segmentation and Correction mode.
     
 ### Annotate your image *(Panel 2)*
 ---   
-Annotations and corrections on the segmented file is done using the layer controls of the *`annotations`* layer. Click on the layer to display them. Only two labels are available: *`Structure of interest`* and *`Other`*. 
+Annotations and corrections on the segmented file is done using the layer controls of the *`annotations`* layer. Click on the layer to display them. Only two labels are available: *`Structure of interest`* and *`Other`*. The rapid manual tagging step of the one-shot learning method aims to learn and attribute different features to each label.
 
-The rapid manual tagging step of the one-shot learning method aims to learn and attribute different features to each label.
-<img align="right" src="https://user-images.githubusercontent.com/49953723/193262735-5dce56fb-8a2c-4aeb-9ee7-9727122d8089.PNG" width="220px"/> 
 To achieve that, the user has to:
+
+![exemple annotation](https://user-images.githubusercontent.com/49953723/193262735-5dce56fb-8a2c-4aeb-9ee7-9727122d8089.PNG){: width="220px" height="200px" .right}
+
 - with the label *`Structure of interest`*, tag few pixels of the structure of interest.
 - with the label *`Other`*, tag the greatest diversity of uninteresting structures in the 3D image (avoid tagging too much pixels).
 
-> see the exemple image with *`Structure of interest`* label in red and *`Other`* label in cyan.
-    
+> In the image aboce the *`Structure of interest`* label is in red and *`Other`* label in cyan.
+{: .prompt-info } 
+
 1. To modify an existing segmentation, you can directy open the segmented file with the <img src="https://user-images.githubusercontent.com/49953723/193266118-dfd241f6-8f0b-4cb9-94e7-5e74a3ce8b6e.PNG" width="130px"/> button. The file needs to have the same dimensions as the original image. 
     > Only .tiff, .tif, .nii and .nii.gz files are supported as segmented files. 
     {: .prompt-info }
@@ -277,7 +286,7 @@ To run training and inference, click on the <img src="https://user-images.github
 2. Probabilities can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/193262733-26e37392-55b2-4c36-9287-b2f5d8d30e03.PNG" width="105px"/> button as a unique 3D image. The probabilities image is normed between 0 and 255.
 3. <img src="https://user-images.githubusercontent.com/49953723/193266056-9514b648-b3e0-43f5-901a-a45fa1390f00.PNG" width="100px"/>: delete annotation data.
 
-## License
+## **LICENSE**
 ---
 
 Distributed under the terms of the [BSD-3] license, **Hesperos** is a free and open source software.

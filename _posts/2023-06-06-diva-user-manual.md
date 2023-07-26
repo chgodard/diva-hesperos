@@ -2,25 +2,29 @@
 title : DIVA User Manual
 date : 2023-07-12 17:00:00 +0800
 tags: [user_manual]
-image:
-    path: https://github.com/DecBayComp/VoxelLearning/assets/49953723/20ade68e-e562-471e-98d1-02e43c343741
 ---
 
     
 <div align="justify">
 
-<!-- <img align="left" src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/20ade68e-e562-471e-98d1-02e43c343741" width="200px"/> -->
-
- **DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D microscopy image stacks and enables efficient visualization and quantification in VR without pre-treatment. 
+![diva logo black](https://github.com/DecBayComp/VoxelLearning/assets/49953723/20ade68e-e562-471e-98d1-02e43c343741){: width="200px" height="200px" .left .light}
+![diva logo white](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e07d2b6e-38af-4a74-b50f-83d58e80bb08){: width="200px" height="200px" .left .dark}
+**DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D microscopy image stacks and enables efficient visualization and quantification in VR without pre-treatment. 
  
-## **Installation and Requirements**
+## **INSTALLATION AND REQUIREMENTS**
 ---
 
-DIVA is designed to run on the Windows 10/11 operating system with at least OpenCL 2.0. We recommend using DIVA with an Intel i5 processor equivalent or better, at least 4GB RAM of memory, 300 MB of storage and a NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). DIVA can be used with and witout VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. You can find the first version of DIVA, user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). For the updated version of DIVA go to the corresponding github repository : [diva-hesperos]() TODOLINKTOADD.
+DIVA is designed to run on the Windows 10/11 operating system with at least OpenCL 2.0. We recommend using DIVA with the following minimum requirement: 
+- Intel i5 processor equivalent or better
+- 4GB RAM of memory
+- 300 MB of storage
+- NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). 
+
+DIVA can be used with and/or witout a VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. You can find the first version of DIVA, user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). For the updated version of DIVA go to the corresponding Github repository : [diva-hesperos](https://github.com/DecBayComp/diva-hesperos).
 
 1. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)).
-2. Install [SteamVR](https://www.steamvr.com/fr/), required to use VR functions.
-3. Install DIVA : load the [*diva_TODOTOCOMPLETE* folder]() and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
+2. Install [SteamVR](https://www.steamvr.com/fr/), required to use VR functionnalities.
+3. Install DIVA : load the [*diva-2.9.13-hesperos* folder from the corresponding Github repository](https://github.com/DecBayComp/diva-hesperos/tree/main/diva-2.9.13-hesperos) and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
   
 > Launch SteamVR before the DIVA software if you want to use the VR environment.
   {: .prompt-warning }
@@ -94,14 +98,23 @@ Voxel color and opacity can be modified in real-time through a user-friendly tra
 
 As shown on the video above with a CT-scan of lung tumor, this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. 
  
-For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the **Volume** panel. 
+For multichannel files, each channel possesses its own transfer function. 
 
 > We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the **Save** button in order to be able to re-open if necessary.
 {: .prompt-tip }
 
 
 TODO explain les points, how to add point, chage TF type, ...
-  
+
+- dekstop clipper
+- TF : 
+    - add/remove point click droit
+    - change TF type
+    - move point : click gauche 
+    - lock option for TF
+    - same for color
+    - opacity 
+- act
 ## **NAVIGATE IN VIRTUAL REALITY**
 --- 
 Switching to and from the VR mode is performed by clicking on <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/28a179d0-e410-4a72-b7a5-6b0a33f0fd6a" width="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/39e3d2e8-b415-43a4-a3c6-ff459e6af1bf" width="20px" class="dark"/> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. 
