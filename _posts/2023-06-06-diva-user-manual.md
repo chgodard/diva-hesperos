@@ -96,6 +96,8 @@ Voxel color and opacity can be modified in real-time through a user-friendly tra
 
 <!-- <img align="center" src="/assets/video/demo_TF1D.mp4"/> -->
 
+<img align="center" src="/assets/videos/DIVA_interface_TF1D.mp4"/>
+
 As shown on the video above with a CT-scan of lung tumor, this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. 
  
 For multichannel files, each channel possesses its own transfer function. 
