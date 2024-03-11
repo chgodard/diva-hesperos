@@ -156,6 +156,54 @@ blockquote {
   @include prompt('danger', '\f071');
 }
 
+body {
+  --hr-line-offset: 25%;
+  --hr-color: lightsalmon;
+  --hr-divacolor: #48A6ED;
+  --hr-colorgrey: rgb(205, 209, 209)
+}
+
+hr.titletype {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+      to right,
+      transparent,
+      var(--hr-divacolor) calc(50% - var(--hr-line-offset)),
+      var(--hr-color) calc(50% + var(--hr-line-offset)),
+      transparent
+  );
+}
+
+hr.title_style2 {
+  border: none;
+  height: 5px;
+  background-color: #48A6ED;
+}
+
+hr.title_style {
+  opacity:1;
+  border: none;
+  height: 4px;
+  background-image: linear-gradient(
+      to right,
+      transparent,
+      var(--hr-divacolor) calc(50% - var(--hr-line-offset)),
+      var(--hr-divacolor) calc(50% + var(--hr-line-offset)),
+      transparent
+  );
+}
+
+hr.subtitle_style {
+  opacity:0.8;
+  border: none;
+  height: 2px;
+  background-image: linear-gradient(
+      to right,
+      var(--hr-colorgrey) 5%,
+      transparent,
+  );
+}
+
 kbd {
   font-family: inherit;
   display: inline-block;
