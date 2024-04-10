@@ -3,15 +3,14 @@ title : DIVA User Manual
 date : 2023-07-12 17:00:00 +0800
 tags: [user_manual]
 ---
-
     
 <div align="justify">
 
 ![diva logo black](https://github.com/DecBayComp/VoxelLearning/assets/49953723/20ade68e-e562-471e-98d1-02e43c343741){: width="200px" height="200px" .left .light}
 ![diva logo white](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e07d2b6e-38af-4a74-b50f-83d58e80bb08){: width="200px" height="200px" .left .dark}
-**DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D microscopy image stacks and enables efficient visualisation and quantification in VR without pre-treatment. 
+**DIVA**, standing for Data Integration and Visualisation in Augmented and virtual environments, is a user-friendly platform that generates volumetric reconstructions from raw 3D microscopy image stacks, enabling users to efficiently visualise and quantify data in virtual reality (VR) without any pre-treatment. 
 
-DIVA is composed of a dual interface, featuring a desktop mode suitable for visualising data on a conventional 2D computer screen and a VR mode designed for immersive visualisation in an artificial environment. The desktop mode is designed for setting optimal visualisation parameters and initial visual of the data, while the VR mode is dedicated to data visualisation, interaction, navigation and analysis.
+DIVA features a dual interface: a desktop mode ideal for displaying data on a standard 2D screen and a VR mode crafted for an immersive visualisation in an artificial environment. The desktop mode focuses on adjusting visualisation settings and providing a preliminary view of the data, whereas the VR mode intensifies focus on data visualisation, user interaction, exploration and analysis.
  
 ## **INSTALLATION AND REQUIREMENTS**
 <hr class="title_style">
@@ -22,13 +21,13 @@ DIVA is designed to run on the Windows 10/11 operating system with at least Open
 - 300 MB of storage
 - NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). 
 
-DIVA can be used with and/or witout a VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. You can find the first version of DIVA, user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). For the updated version of DIVA go to the corresponding Github repository : [diva-hesperos](https://github.com/DecBayComp/diva-hesperos).
+DIVA can be used with and/or witout a VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. You can find the first version of DIVA, user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). For the updated version of DIVA working with Hesperos go to the corresponding Github repository : [diva-hesperos](https://github.com/DecBayComp/diva-hesperos).
 
 1. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)).
 2. Install [SteamVR](https://www.steamvr.com/fr/), required to use VR functionnalities.
 3. Install DIVA : load the [*diva-2.9.13-hesperos* folder from the corresponding Github repository](https://github.com/DecBayComp/diva-hesperos/tree/main/diva-2.9.13-hesperos) and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
   
-> Launch SteamVR before the DIVA software if you want to use the VR environment.
+> Launch SteamVR (and Oculus app) before the DIVA software if you want to use the VR environment.
   {: .prompt-warning }
 
 
@@ -51,7 +50,7 @@ As DIVA software supports multi-channel files, overlay different image types can
 
 This is the step you can realised in [ImageJ/Fiji](https://imagej.net/software/fiji/downloads):
 
-1. Open the different images by dragging and dropping or with *File/Open*
+1. Open images by dragging and dropping or via the *File/Open* option
 2. Improve visualisation : go in *Image/Adjust/Brightness* and click on *Auto*.
     > Sometimes you can see a black image for the segmented image, this doesn't mean the image is empty: it's a visualisation issue. Be sure to have selected the segmented image (by clicking on it) otherwise it will apply this effect on the other image.
     {: .prompt-warning }
@@ -102,40 +101,37 @@ In the **Information** panel, parameters interface can be access via the <img sr
 - *`scale`*: global isotropic scaling of the volume.
 - *`brightness`*: ambient lighting coefficient which is an offset globally applied to all pixel intensity values.
 - *`diffuse`*: diffuse lighting coefficient, taking into account directional light to create shading effects from top to bottom in DIVA.
-- *`quality`*: TODO.
-- *`bricks`*: TODO.
+- *`quality`*: quality of the rendered volume.
+- *`bricks`*: numbers of volume elements displayed simultaneously.
 
 ### 2D tools
 <hr class="subtitle_style">
 In the **View** panel, users can enable/disable a **Desktop Clipper** tool by right clicking on <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/609c54f0-dcf8-43a5-9bf7-089579e0661c" width="20px" height="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/2e130457-0cb0-4add-b481-d5d6aca4b59d" width="20px" height="20px" class="dark"/>. The tool is visually symbolised by three spherical markers positioned in the two corners of the volume. Shifting one of these markers along any of the three fundamental axes of a cube disables the corresponding section, enhancing the visibility of internal details. 
 
 
-### The transfer function interface
+### The transfer function (TF) interface
 <hr class="subtitle_style">
 
 Voxel colour and opacity can be modified in real-time through a user-friendly transfer function (TF) interface located in the **Volume** panel under ![channel1](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67){:.inline-image width="20px" height="20px" .light} ![channel1](https://github.com/DecBayComp/VoxelLearning/assets/49953723/fdb49542-fb08-431d-885f-a029bf62ebac){:.inline-image width="20px" height="20px" .dark} or ![chanel2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659){:.inline-image width="20px" height="20px" .light} ![chanel2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/c1661a1f-241e-491f-a0e7-9f5de16814ab){:.inline-image width="20px" height="20px" .dark} icon. For multichannel files, each channel possesses its own transfer function. 
 
 <!-- <img align="center" src="https://github.com/DecBayComp/VoxelLearning/blob/main/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif?raw=true"/> -->
-<!-- <img align="center" src="/assets/video/demo_TF1D.mp4"/> -->
-<img align="center" src="/assets/videos/DIVA_interface_TF1D.gif"/>
+<img align="center" src="/assets/videos/DIVA_interface_TF1D_b.gif"/>
 
 As shown on the video above with a CT-scan of lung tumor from [the Medical Segmentation Decathlon challenge’s public dataset](https://www.nature.com/articles/s41467-022-30695-9), the interface comprises :
 
-- an <ins>image histogram</ins> plotted in grey. The image histogram represents the pixel intensity distribution of the image, always
-log-scaled and normalised from 0 to 255 (from left to right in the horizontal axis), where 0 corresponds to the dark pixel and 255 to the white pixel. The vertical axis corresponds to the number of occurrences of each pixel intensity.
+- an <ins>image histogram</ins> plotted in grey, that illustrates the distribution of pixel intensities across the image, stretching on a log scale from 0(representing black pixels) to 255 (indicating white pixels) on the horizontal axis. The vertical axis quantifies the occurrences of each intensity value.
 
-- an <ins>absorption curve</ins> plotted in white on the histogram. The absorption curve defines the opacity. Each pixel under the absorption curve is displayed, while each pixel above the absorption curve is disabled (i.e. with an absorption value of zero). DIVA allows the curve to be constituted of spline segments or a combination of symmetric or asymmetric Gaussian mixture models (GMM).
+- a white <ins>absorption curve</ins> on the histogram indicates opacity, revealing pixels below the curve and disabling those above it by setting their absorption to zero. In DIVA, this curve can be formed from spline segments, symmetric Gaussian mixture models (GMM), asymmetric GMM, or a blend of these.
     > The lock option for the absorption curve can help to explore your data by fixing three colour points to one curve points.
     {: .prompt-tip }
 
-- an <ins>emission curve</ins>  represented with a horizontal colour bar. This allows users to apply a specific colour to a specific pixel intensity range.
+- an <ins>emission curve</ins> represented with a horizontal colour bar, , facilitating the colour-coding of specific pixel intensity ranges.
 
-- a <ins>global opacity</ins>  index represented with a vertical blue slide bar, applied uniformly to all voxels.
+- a <ins>global opacity</ins> index represented with a vertical blue slider, uniformly affecting the opacity of all voxels.
 
-Absorption and emission curves are defined with control points which can be created or deleted by right cliking, moved by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). For curve as Gaussian the slope of each control point can be independently adjusted by positionning the mouse on the point and scrolling down to decrease and up to increase.
+The configuration of absorption and emission curves relies on control points that users can manage by right-clicking to add or delete and left-clicking to drag to a new position (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). For Gaussian curves, the slope at each control point can be fine-tuned by placing the mouse over the point and using the scroll wheel to decrease (scrolling down) or increase (scrolling up) the slope.
 
-Transfer function setting allow to hightligh structures of interest. As shown in the video, a curve based on GMM simplifies isolating a structure in the image with distinct pixel intensities. as we can see in the video when moving the curve from left to right  with curve at left displaying lung and cruve at right displaying bones.
- 
+Adjusting the transfer function settings enhances the visualisation of certain structures of interest. As illustrated in the video, applying a GMM-based curve makes it easier to isolate structures distinguished by unique pixel intensities. This becomes clear as the curve is shifted from left to right, initially showcasing the lungs and subsequently revealing bones at its rightmost adjustment.
 > We recommend you to customise this transfer function to highlight your object of interest and save it as .json file using the **Save** button in order to be able to re-open if necessary.
 {: .prompt-tip}
 
@@ -147,37 +143,54 @@ Switching to and from the VR mode is performed by clicking on <img src="https://
 > This button will not respond if SteamVR is not installed.  
 {: .prompt-danger }
 
-In the VR environment, you can interact with the volume with the VR controller, see details [here](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). The VR menu is accessed by pointing the VR controller at the loaded volume with the laser
-pointer and pressing the Menu Button . Note that depending on the VR headset being used, the position of the Menu Button will differ.
 
+Interaction with the volume in the VR environment is facilitated by the VR controller, see details on controller buttons [here](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). To access the **VR Menu**, simply direct the laser pointer from the VR controller towards the volume and click the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/73cf82c3-ad95-45c9-a566-d89d64b6d5eb" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/8eddc41d-4932-442f-bbf1-1402289157a3" width="20px" class="dark"/> button. 
+> Note that depending on the VR headset being used, the position of this button will differ.
+{: .prompt-warning }
 
-HOW TO open menu 
-
-
-
-
+The **VR Menu** offers access to a selection of tools, each symbolised by a unique icon. Selecting a tool involves pointing the laser pointer at its icon and pressing the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/73cf82c3-ad95-45c9-a566-d89d64b6d5eb" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/8eddc41d-4932-442f-bbf1-1402289157a3" width="20px" class="dark"/> button, which will turn the tool icon blue to denote its selection. Closing the **VR Menu** requires pointing the laser into empty space (away from the menu and the volume) and pressing the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/73cf82c3-ad95-45c9-a566-d89d64b6d5eb" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/8eddc41d-4932-442f-bbf1-1402289157a3" width="20px" class="dark"/> button once more.
 > If the volume is not visible, a guide arrow points towards the volume. At any moment, the volume will reappear in front of the user by pressing on the spacebar of the keyboard.
 {: .prompt-tip}
 
 
 ### Physical manipulation
 <hr class="subtitle_style">
-Physical manipulation is achieved through the VR controller, which relies on motion tracking, including actions such as grasping, by pressing on the trigger button, and turning in any direction and position.
 
-Users can activate the **VR Clipper** tool, by clicking on the ICON button in the VR menu, to ease the navigation in complex and dense images. The tool is symbolised by a square attached to the controller. It operates dynamically by removing a planar portion,corresponding to the square, from the rendered volume, allowing deep structures in the image to be revealed. 
+The VR controller enables physical interaction within the virtual environment through motion tracking capabilities, supporting movements such as grasping (activated by the trigger button) and rotating in any chosen direction. 
 
-The **VR Flashlight** tool, activated via the ICON button in the VR menu, highlights a user-defined spherical region while dimming the surrounding image.
+To navigate complex and dense images more easily, users can employ the **VR Clipper** tool by clicking its designated icon <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/a9be1963-7084-4a21-9638-91ad2ec7df88" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/1ed2ba88-e665-4b91-8f80-512df3455896" width="20px" class="dark"/> in the **VR Menu**. Represented by a square attached to the controller, it actively removes a planar fragment from the volume, aligned with the square, exposing deeper image structures. 
+
+The **VR Flashlight** tool, activated via the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/53e8c011-a522-4f28-9d29-8dbb29a26aab" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/b455ddf3-d71d-4006-9a11-6b8ed968d99d" width="20px" class="dark"/> icon in the **VR Menu**, illuminates a chosen spherical section, leaving the rest of the image in shadow, thereby drawing focus to the selected area.
 
 
 ### Quantitative analysis tools
 <hr class="subtitle_style">
 
-Basic quantitative analysis is facilitated with tagging, counting, and distance measurement tools. Each tools posees its own specialised widget displayed on the VR controller.
+Basic quantitative analysis is facilitated with counting and distance measurement tools. To access these tools, users click on a submenu located under the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/ae56543e-bcfe-4cad-a588-926f21134f74" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/69b0f7f2-ffbd-41d3-bd25-87b10e075cac" width="20px" class="dark"/> icon within the **VR Menu**.
 
-Counting is done with the **VR Landmark** tool, activated via the ICON button in the VR menu. Adding a element by clicking on the ICON PLUs will create a sphere that can be cyan, magenta, yellow or gray according to the color select by ICON ?. To remove a counter sphere, place the controller in front of the sphere until it changes color to green. At this point, the counter sphere can be deleted by pressing the Delete Button ( icon).
+<img align="center" src="/assets/videos/DIVA_VR_tools.gif"/>
 
-Physical distance measurement is done with the **VR Ruler** tool, activated via the ICON button in the VR Menu. To start a measurement segment, users press the ICON PLUS, creatibg a sphere anb a white line that connect the sphere to the controller porsition. To connect a segment, simply press the Connect Button again. Multiple segments can be connected in this way. To undo a previously made segment, press the Undo Button ( icon). A measurement is finished by pressing the Finish Button ( icon). Measurement segments can additionally be entirely deleted by pressing the Cancel Button (
-icon) that appears on the controller widget, shown below.
+From the **VR Annotations** panel (in the Desktop mode), measurement data, including x, y, z coordinates, pixel-based distances, and additional details, can be exported into a .csv file by using the **Export** button. Via the **Save** button, these results can be saved as .json file in order to be re-opened later in DIVA.
+> Additionally, screen and movie capture exports are also available.
+{: .prompt-tip}
+
+=== TOREREAD====
+
+#### <ins>Counting</ins>
+Counting is done with the **VR Landmark** tool, activated via the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/c24d6f64-93f1-4c1a-9d2b-22f1cbef950b" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/e5f5a95a-159b-43ea-8418-984f28a04bc5" width="20px" class="dark"/> button in the **VR Menu**. Adding a element by clicking on the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/35c93203-6e80-4a4e-849f-370bf26ba56d" width="15px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/1d8f5852-b73f-434d-b7d7-cd10dc924cb7" width="15px" class="dark"/> button displayed on the VR controller will create a sphere that can be cyan, magenta, yellow or gray according to the color select by the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/9308206e-00b2-4a49-847b-6d99ba6e345d" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/e5a68fc4-ef2f-48e1-bed7-e85a74711760" width="20px" class="dark"/> button in the VR controller. To remove a counter sphere, place the controller in front of the sphere until it changes color to green. At this point, the counter sphere can be deleted by pressing the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/4928762e-5515-42c9-bd9b-d5410ffc1c39" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/4928762e-5515-42c9-bd9b-d5410ffc1c39" width="20px" class="dark"/> button.
+
+#### <ins>Measuring</ins>
+Physical distance measurement is done with the **VR Ruler** tool, activated via the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/402c08a6-cdb1-4180-a901-c024f8669778" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/0c8e028a-05bc-44da-8369-872e57da04d9" width="20px" class="dark"/> button in the **VR Menu**. To start a measurement segment, users press the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/35c93203-6e80-4a4e-849f-370bf26ba56d" width="15px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/1d8f5852-b73f-434d-b7d7-cd10dc924cb7" width="15px" class="dark"/> button, creatibg a sphere anb a white line that connect the sphere to the controller porsition. To connect a segment, simply press the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/35c93203-6e80-4a4e-849f-370bf26ba56d" width="15px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/1d8f5852-b73f-434d-b7d7-cd10dc924cb7" width="15px" class="dark"/> button again. Multiple segments can be connected in this way. To undo a previously made segment, press the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/ac6d908d-0eb6-4367-94d9-4165712f81d9" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/901ca3a7-5544-492f-b644-ce04a57b88d3" width="20px" class="dark"/> button. A measurement is finished by pressing the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/73cfd126-de3e-45df-9567-c21909151697" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/73cfd126-de3e-45df-9567-c21909151697" width="20px" class="dark"/> button. Measurement segments can additionally be entirely deleted by pressing the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/4928762e-5515-42c9-bd9b-d5410ffc1c39" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/4928762e-5515-42c9-bd9b-d5410ffc1c39" width="20px" class="dark"/> button that appears on the controller widget, shown below.
+
+
+
+### Quantitative analysis tools
+<hr class="subtitle_style">
+
+These actions are accesible by clicking via a submenu under the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/93ba7823-3f89-4422-bd8d-a87675d07f13" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/67630e01-801b-4895-8968-aa77f7a242b1" width="20px" class="dark"/> icon in the **VR Menu**.
+
+Ragging tool is accivable via the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/220632b6-990c-41e8-9046-52642ebac901" width="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/2160bf27-b50e-49c3-9d95-065c67cd0315" width="20px" class="dark"/>  icon in the **VR Menu**.
+
 
 Tagging is done with the controller by clicking on the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/35c93203-6e80-4a4e-849f-370bf26ba56d" width="15px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/1d8f5852-b73f-434d-b7d7-cd10dc924cb7" width="15px" class="dark"/> button and choosing the tag's colour (cyan for positive tags and magenta for negative tags).
  
@@ -185,9 +198,5 @@ Tagging is done with the controller by clicking on the <img src="https://github.
  
 Each measurement result can be exported to a .csv file in the **VR Annotations** panel with the **Export** button, including data such as x, y, z coordinates, distances in pixels, and additional details. Via the **Save** button, these results can be saved as .json file in order to be re-opened later in DIVA.
 
- 
- 
- icon <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/220632b6-990c-41e8-9046-52642ebac901" width="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/2160bf27-b50e-49c3-9d95-065c67cd0315" width="20px" class="dark"/> 
 
 
-Additionally, screen and movie capture exports are also available.
