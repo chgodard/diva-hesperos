@@ -115,7 +115,7 @@ In the **View** panel, users can enable/disable a **Desktop Clipper** tool by ri
 Voxel colour and opacity can be modified in real-time through a user-friendly transfer function (TF) interface located in the **Volume** panel under ![channel1](https://github.com/DecBayComp/VoxelLearning/assets/49953723/e6a82720-edf6-4d24-92c0-ab4f316a3d67){:.inline-image width="20px" height="20px" .light} ![channel1](https://github.com/DecBayComp/VoxelLearning/assets/49953723/fdb49542-fb08-431d-885f-a029bf62ebac){:.inline-image width="20px" height="20px" .dark} or ![chanel2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/7f009be9-ad73-43ab-a945-38f1379b8659){:.inline-image width="20px" height="20px" .light} ![chanel2](https://github.com/DecBayComp/VoxelLearning/assets/49953723/c1661a1f-241e-491f-a0e7-9f5de16814ab){:.inline-image width="20px" height="20px" .dark} icon. For multichannel files, each channel possesses its own transfer function. 
 
 <!-- <img align="center" src="https://github.com/DecBayComp/VoxelLearning/blob/main/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif?raw=true"/> -->
-<img align="center" src="/assets/videos/DIVA_interface_TF1D_b.gif"/>
+[<img align="center" src="/assets/videos/DIVA_interface_TF1D.gif"/>](https://youtu.be/3DbggkzVKYA)
 
 As shown on the video above with a CT-scan of lung tumor from [the Medical Segmentation Decathlon challenge’s public dataset](https://www.nature.com/articles/s41467-022-30695-9), the interface comprises :
 
@@ -168,7 +168,7 @@ The **VR Flashlight** tool, activated via the <img src="https://github.com/DecBa
 
 Basic quantitative analysis is facilitated with counting and distance measurement tools. To access these tools, users click on a submenu located under the <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/ae56543e-bcfe-4cad-a588-926f21134f74" width="20px" class="light"/> <img src="https://github.com/DecBayComp/diva-hesperos/assets/49953723/69b0f7f2-ffbd-41d3-bd25-87b10e075cac" width="20px" class="dark"/> icon within the **VR Menu**.
 
-<img align="center" src="/assets/videos/DIVA_VR_tools.gif"/>
+[<img align="center" src="/assets/videos/DIVA_VR_tools.gif"/>](https://youtu.be/7kKhHYrQ4E0)
 
 From the **VR Annotations** panel (in the Desktop mode), measurement data, including x, y, z coordinates, pixel-based distances, and additional details, can be exported into a .csv file by using the **Export** button. Via the **Save** button, these results can be saved as .json file in order to be re-opened later in DIVA.
 > Additionally, screen and movie capture exports are also available.
@@ -192,7 +192,7 @@ Additional VR functionalities can be accessed through a submenu found beneath th
 
 We have developed a new variant of DIVA, aiming to enhance voxel learning by combining virtual reality with an easy annotation system, straightforward classifier learning, and robust cloud-based computation. For further details, please visit our [GitHub repository VoxelLearning](https://github.com/DecBayComp/VoxelLearning) to access a dedicated user manual.
 
-<img align="center" src="/assets/videos/DIVA_Cloud_VoxelLearning_pipeline.gif"/>
+[<img align="center" src="/assets/videos/DIVA_Cloud_VoxelLearning_pipeline.gif"/>](https://youtu.be/DhgHurZC9Ow)
 
 
 ##  **DIVA AND POINT CLOUD**
@@ -201,7 +201,7 @@ We have developed a new variant of DIVA, aiming to enhance voxel learning by com
 Localising molecules in large images can generate a huge amounts of data to process. Analysing these point clouds and trajectories to detect localisation errors can therefore be very time consuming. This is what motivated the combination of two platforms: DIVA and [Genuage](https://www.nature.com/articles/s41592-020-0946-1), in order to visualise raw image in virtual reality, overlayed with the trajectory data, thus allowing users to explore and check the validity of multidimensional point cloud data. For more information, our [GitHub repository diva-genuage](https://github.com/DecBayComp/diva-genuage) contains a specific user manual.
 
 
-<img align="center" src="/assets/videos/DIVA_Genuage_VR_interface.gif"/>
+[<img align="center" src="/assets/videos/DIVA_Genuage_VR_interface.gif"/>](https://youtu.be/38wVJ4dqhqI)
 
 
 ## **LICENSE**
