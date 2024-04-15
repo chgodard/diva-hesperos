@@ -98,9 +98,9 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
 <hr class="title_style">
 
 
- The **Manual Segmentation and Correction** mode of the Hesperos plugin is a simplified and optimised interface to do basic 2D manual segmentation of several structures in a 3D image using a mouse or a stylet with a tablet.
+The **Manual Segmentation and Correction** mode of the Hesperos plugin is a simplified and optimised interface to do basic 2D manual segmentation of several structures in a 3D image using a mouse or a stylet with a tablet.
 
- <img src="https://github.com/chgodard/hesperos/assets/49953723/dfcf96a2-1c41-41b7-b931-22b6c6841d5e" width="1000px"/>
+<img src="https://github.com/chgodard/hesperos/assets/49953723/dfcf96a2-1c41-41b7-b931-22b6c6841d5e" width="1000px"/>
     
 ### Import and adjust your image *(Panel 1)*
 <hr class="subtitle_style">

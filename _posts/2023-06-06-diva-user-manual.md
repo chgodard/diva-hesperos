@@ -207,4 +207,6 @@ Localising molecules in large images can generate a huge amounts of data to proc
 ## **LICENSE**
 <hr class="title_style">
 
-**DIVA** is a free but not open source software.
+Distributed under the terms of the [BSD-3] license, **DIVA** is a free but not open source software.
+
+[BSD-3]: http://opensource.org/licenses/BSD-3-Clause
