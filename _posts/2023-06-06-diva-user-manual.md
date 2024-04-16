@@ -89,7 +89,7 @@ You can enable or disable each channel independently by right- or left-clicking 
 > If the image is loaded with strange scale (possible artefact if there is no information about image size in the metadata), go in the Information panel and finetune the scale for each axis.
 {: .prompt-tip }
 
-##  **IMPROVE VISUALISATION**
+## **IMPROVE VISUALISATION**
 <hr class="title_style">
 
 Upon loading, a menu in blue appears in the top right corner and is attached to the loaded volume, with volume information accesible in the  **Information** panel under the <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/df440c3e-aeb4-44bd-88d3-fee0aa6e0174" width="20px" height="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/7c966a23-9074-4785-ad53-4f7729cb5ea2" width="20px" height="20px" class="dark"/> button.
@@ -136,11 +136,11 @@ Adjusting the transfer function settings enhances the visualisation of certain s
 {: .prompt-tip}
 
 
-##  **NAVIGATE IN VIRTUAL REALITY**
+## **NAVIGATE IN VIRTUAL REALITY**
 <hr class="title_style">
 
 Switching to and from the VR mode is performed by clicking on <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/28a179d0-e410-4a72-b7a5-6b0a33f0fd6a" width="20px" class="light"/> <img src="https://github.com/DecBayComp/VoxelLearning/assets/49953723/39e3d2e8-b415-43a4-a3c6-ff459e6af1bf" width="20px" class="dark"/> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. 
-> This button will not respond if SteamVR is not installed.  
+> This button will not respond if SteamVR is not installed.
 {: .prompt-danger }
 
 
@@ -187,7 +187,7 @@ Additional VR functionalities can be accessed through a submenu found beneath th
 <img align="center" src="/assets/videos/DIVA_tagging.gif"/>
 
 
-##  **DIVA AND LEARNING**
+## **DIVA AND LEARNING**
 <hr class="title_style">
 
 We have developed a new variant of DIVA, aiming to enhance voxel learning by combining virtual reality with an easy annotation system, straightforward classifier learning, and robust cloud-based computation. For further details, please visit our [GitHub repository VoxelLearning](https://github.com/DecBayComp/VoxelLearning) to access a dedicated user manual.
@@ -195,7 +195,7 @@ We have developed a new variant of DIVA, aiming to enhance voxel learning by com
 [<img align="center" src="/assets/videos/DIVA_Cloud_VoxelLearning_pipeline.gif"/>](https://youtu.be/DhgHurZC9Ow)
 
 
-##  **DIVA AND POINT CLOUD**
+## **DIVA AND POINT CLOUD**
 <hr class="title_style">
 
 Localising molecules in large images can generate a huge amounts of data to process. Analysing these point clouds and trajectories to detect localisation errors can therefore be very time consuming. This is what motivated the combination of two platforms: DIVA and [Genuage](https://www.nature.com/articles/s41592-020-0946-1), in order to visualise raw image in virtual reality, overlayed with the trajectory data, thus allowing users to explore and check the validity of multidimensional point cloud data. For more information, our [GitHub repository diva-genuage](https://github.com/DecBayComp/diva-genuage) contains a specific user manual.

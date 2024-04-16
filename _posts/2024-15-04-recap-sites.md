@@ -7,7 +7,7 @@ tags: []
 <div align="justify">
 
 
-##  **DIVA EXECUTABLE RESSOURCES**
+## **DIVA EXECUTABLE RESSOURCES**
 <hr class="title_style">
 
 ### Software executable
@@ -42,7 +42,7 @@ Here you can find all sites that provide an executable version of DIVA (the code
 - The DIVA VoxelLearning article: [C. Guérinot and V. Marcon and C. Godard et al. *New Approach to Accelerated Image Annotation by Leveraging Virtual Reality and Cloud Computing*. Frontiers in Bioinformatics, vol.1, (2022)](https://www.frontiersin.org/articles/10.3389/fbinf.2021.777101/full)
 
 
-##  **HESPEROS RESSOURCES**
+## **HESPEROS RESSOURCES**
 <hr class="title_style">
 
 The code of Hesperos can be found in the GitHub repository [chgodard/hesperos](https://github.com/chgodard/hesperos), the [Napari Hub page](https://www.napari-hub.org/plugins/hesperos) or the [Pypi page](https://pypi.org/project/hesperos/).

@@ -23,7 +23,7 @@ Hesperos is a [napari] plugin for pre-defined manual segmentation or semi-automa
 The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Python 3.8 / 3.9 / 3.10.
      
     
-### Automatic installation  
+### Automatic installation
 <hr class="subtitle_style">
 
 1. Install [Anaconda] and unselect *Add to PATH*. Keep in mind the path where you choose to install anaconda.
@@ -92,11 +92,9 @@ The Hesperos plugin is designed to run on Windows (11 or less) and MacOS with Py
     2. Search for "hesperos" (it can take a while to load).
     3. Click on *Update* if a new version of Hesperos has been found. You can check the latest version of Hesperos in the [Napari Hub](https://www.napari-hub.org/plugins/hesperos).
     4. When the installation is done, close Napari. A restart of Napari is required to finish the plugin installation.
-   
  
 ## **MANUAL SEGMENTATION AND CORRECTION MODE**
 <hr class="title_style">
-
 
 The **Manual Segmentation and Correction** mode of the Hesperos plugin is a simplified and optimised interface to do basic 2D manual segmentation of several structures in a 3D image using a mouse or a stylet with a tablet.
 
@@ -146,17 +144,17 @@ When data is loading, two layers are created: the *`image`* layer and the *`anno
 - <img src="https://user-images.githubusercontent.com/49953723/193262722-6bb6e6a4-ae7a-4ad1-b7f8-898e54ad62c3.PNG" width="25px"/>: paint brush with the same colour than the *`label`* rectangle.
 - <img src="https://user-images.githubusercontent.com/49953723/193262719-f816b21e-78fd-4ba7-b415-30a461cbd652.PNG" width="25px"/>: fill bucket with the same colour than the *`label`* rectangle.
 - <img src="https://user-images.githubusercontent.com/49953723/193262725-7d4f7b09-d119-45cf-a9d4-c42c5f848c1a.PNG" width="25px"/>: select to zoom in and out with the mouse wheel (same as the zoom slider at the top right corner in Panel 1).
-- *`label`*: a coloured rectangle to represent the selected label.  
-- *`opacity`*: a slider to control the global opacity of the layer.  
-- *`brush size limits`*: a slider to control size of the paint/erase brush.    
+- *`label`*: a coloured rectangle to represent the selected label.
+- *`opacity`*: a slider to control the global opacity of the layer.
+- *`brush size limits`*: a slider to control size of the paint/erase brush.
 - *`preserve labels`*: if selected, all actions are applied only on the selected label (see the *`label`* rectangle); if not selected, actions are applied on all labels.
 - *`show selected`*: if selected, only the selected label will be display on the layer; if not selected, all labels are displayed.
    
     
 >A second option for filling has been added
->1. Drawn the egde of a closed shape with the paint brush mode.  
->2. Double click to activate the fill bucket.  
->3. Click inside the closed area to fill it.  
+>1. Drawn the egde of a closed shape with the paint brush mode.
+>2. Double click to activate the fill bucket.
+>3. Click inside the closed area to fill it.
 >4. Double click on the filled area to deactivate the fill bucket and reactivate the paint brush mode.
 {: .prompt-tip }
 
@@ -181,7 +179,7 @@ Manual annotation and correction on the segmented file is done using the layer c
 > You have to choose a structure to start annotating *(see 2.)*.
 {: .prompt-info }
 1. To modify an existing segmentation, you can directy open the segmented file with the <img src="https://user-images.githubusercontent.com/49953723/193262702-df3b4fb8-63d0-4a1b-b1c9-8391cf8c3f22.PNG" width="130px"/> button. The file needs to have the same dimensions as the original image. 
-    > Only .tiff, .tif, .nii and .nii.gz files are supported as segmented files.  
+    > Only .tiff, .tif, .nii and .nii.gz files are supported as segmented files.
     {: .prompt-warning }
     
 2. Choose a structure to annotate in the drop-down menu
@@ -204,7 +202,7 @@ Manual annotation and correction on the segmented file is done using the layer c
         4. To go back to your slice of interest, click on the <img src="https://user-images.githubusercontent.com/49953723/193262703-2b2ea2dc-24fa-438b-a75c-3aa42b210f53.PNG" width="30px"/> button.
     - <ins>To deactivate the functionality</ins> (or change the locked slice index): 
         1. Go to the locked slice.
-        2. Click on the <img src="https://user-images.githubusercontent.com/49953723/193262703-2b2ea2dc-24fa-438b-a75c-3aa42b210f53.PNG" width="30px"/> button  => change the button to <img src="https://user-images.githubusercontent.com/49953723/193262706-40f3dbca-5589-406d-81e8-e150ae8bfab6.PNG" width="30px"/> and "unlock" the slice.
+        2. Click on the <img src="https://user-images.githubusercontent.com/49953723/193262703-2b2ea2dc-24fa-438b-a75c-3aa42b210f53.PNG" width="30px"/> button => change the button to <img src="https://user-images.githubusercontent.com/49953723/193262706-40f3dbca-5589-406d-81e8-e150ae8bfab6.PNG" width="30px"/> and "unlock" the slice.
 
 
 ### Select slices of interest *(Panel 4)*
