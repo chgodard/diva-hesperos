@@ -141,10 +141,10 @@ When data is loading, two layers are created: the *`image`* layer and the *`anno
 
 <ins>For the *annotations* layer:</ins>
 - <img src="https://user-images.githubusercontent.com/49953723/193262718-30882770-59eb-4d2b-9cfe-8b88537560c4.PNG" width="25px"/>: erase brush to erase all labels at once (if *`preserve labels`* is not selected) or only erase the selected label (if *`preserve labels`* is selected).
-- <img src="https://user-images.githubusercontent.com/49953723/193262722-6bb6e6a4-ae7a-4ad1-b7f8-898e54ad62c3.PNG" width="25px"/>: paint brush with the same colour than the *`label`* rectangle.
-- <img src="https://user-images.githubusercontent.com/49953723/193262719-f816b21e-78fd-4ba7-b415-30a461cbd652.PNG" width="25px"/>: fill bucket with the same colour than the *`label`* rectangle.
+- <img src="https://user-images.githubusercontent.com/49953723/193262722-6bb6e6a4-ae7a-4ad1-b7f8-898e54ad62c3.PNG" width="25px"/>: paint brush with the same color than the *`label`* rectangle.
+- <img src="https://user-images.githubusercontent.com/49953723/193262719-f816b21e-78fd-4ba7-b415-30a461cbd652.PNG" width="25px"/>: fill bucket with the same color than the *`label`* rectangle.
 - <img src="https://user-images.githubusercontent.com/49953723/193262725-7d4f7b09-d119-45cf-a9d4-c42c5f848c1a.PNG" width="25px"/>: select to zoom in and out with the mouse wheel (same as the zoom slider at the top right corner in Panel 1).
-- *`label`*: a coloured rectangle to represent the selected label.
+- *`label`*: a colored rectangle to represent the selected label.
 - *`opacity`*: a slider to control the global opacity of the layer.
 - *`brush size limits`*: a slider to control size of the paint/erase brush.
 - *`preserve labels`*: if selected, all actions are applied only on the selected label (see the *`label`* rectangle); if not selected, actions are applied on all labels.
@@ -190,7 +190,7 @@ Manual annotation and correction on the segmented file is done using the layer c
     - *`Shoulder`*: to annotate bones and muscles for shoulder surgery.
     - *`Shoulder Bones`*: to annotate only few bones for shoulder surgery.
     
-    > When selecting a structure, a new panel appears with a list of elements to annotate. Each element has its own label and colour. Select one element in the list to automatically activate the paint brush mode with the corresponding colour (colour is updated in the *`label`* rectangle in the layer controls panel).
+    > When selecting a structure, a new panel appears with a list of elements to annotate. Each element has its own label and color. Select one element in the list to automatically activate the paint brush mode with the corresponding color (color is updated in the *`label`* rectangle in the layer controls panel).
     {: .prompt-tip }
     
 3. All actions can be undone with the <img src="https://user-images.githubusercontent.com/49953723/193265848-8c458035-609a-433e-aa82-5d9588971425.PNG" width="30px"/> button or Ctrl-Z.
@@ -296,6 +296,14 @@ To run training and inference, click on the <img src="https://user-images.github
 1. Segmented probabilites can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/193262734-57159a97-2f46-4aba-b3bf-b55a35dfacbd.PNG" width="105px"/> button. The image is exported as a unique 3D binary image (value 0 and 255). This file can be re-opened in the application for correction.
 2. Probabilities can be exported as .tif, .tiff, .nii or .nii.gz file with the <img src="https://user-images.githubusercontent.com/49953723/193262733-26e37392-55b2-4c36-9287-b2f5d8d30e03.PNG" width="105px"/> button as a unique 3D image. The probabilities image is normed between 0 and 255.
 3. <img src="https://user-images.githubusercontent.com/49953723/193266056-9514b648-b3e0-43f5-901a-a45fa1390f00.PNG" width="100px"/>: delete annotation data.
+
+
+## **LIMITATIONS**
+<hr class="title_style">
+
+The strength of Hesperos is most apparent when used on touch-enabled devices to facilitate easier annotation. Nonetheless, as it is designed as a Napari plugin, it only supports Windows and macOS systems, not Android, limiting its usability. Users are therefore confined to tactile computers like the Microsoft Surface or graphic tablets.  While smaller tactile computers offer the benefit of portability and ease the tedious task of manual annotation, they may also lead to performance degradation and app freezing during demanding computational tasks. On the other hand, graphical tablets, though needing a computer connection, offer larger displays and touch functionality exclusively with a stylus, which allows for more precise annotations by supporting the user's arm.
+
+The design philosophy of Hesperos focuses on being as minimalistic as possible to ensure it is user-friendly. This approach, however, means customisation options are limited, for example, adding layers or new label lists is not straightforward and requires changes to the source code. A developer's manual is planned to simplify this process for users.
 
 ## **LICENSE**
 <hr class="title_style">
