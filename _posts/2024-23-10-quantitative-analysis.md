@@ -1,6 +1,6 @@
 ---
 title : Quantitative Analysis
-date : 2024-23-10 17:00:00 +0800
+date : 2024-10-23 17:00:00 +0800
 tags: []
 ---
 
